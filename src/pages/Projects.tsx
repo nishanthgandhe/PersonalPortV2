@@ -1,4 +1,36 @@
+import { useState } from 'react';
+import ProjectModal from '../components/ProjectModal';
+
+interface Technology {
+  name: string;
+  color: string;
+}
+
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  details: string[];
+  technologies: Technology[];
+  github: string | null;
+  live: string | null;
+  image: string;
+  collaborators: string[];
+}
+
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
   const projects = [
     {
       id: 1,
@@ -207,7 +239,7 @@ const Projects = () => {
         { name: "Responsive Design", color: "#20B2AA" }
       ],
       github: "https://github.com/nishanthgandhe/PersonalPortfolio-1",
-      live: null,
+      live: "https://nishanthgandhe.github.io/PersonalPortfolio-1/",
       image: "./images/portfolio_v1.png",
       collaborators: []
     },
@@ -324,7 +356,8 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="bg-black flex flex-col justify-center items-center text-white py-16 px-6 sm:px-12 md:px-16 lg:px-24">
+    <>
+      <section id="projects" className="bg-black flex flex-col justify-center items-center text-white py-16 px-6 sm:px-12 md:px-16 lg:px-24">
       <div className="text-center mb-16">
         <div className="inline-block">
           <span className="text-sm border border-gray-700/50 bg-gray-900/80 backdrop-blur-sm rounded-full px-4 py-2 text-gray-300 mb-6 inline-block hover:border-cyan-400/50 transition-colors duration-300">
@@ -348,11 +381,9 @@ const Projects = () => {
               }}
             >
               <div className="relative h-40 overflow-hidden">
-                <a
-                  href={project.github || project.live || '#'}
-                  target={project.github || project.live ? "_blank" : "_self"}
-                  rel="noopener noreferrer"
-                  className="block h-full"
+                <button
+                  onClick={() => openModal(project)}
+                  className="block h-full w-full text-left"
                 >
                   <img
                     src={project.image}
@@ -362,17 +393,23 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent group-hover:from-black/20 transition-all duration-300 flex items-center justify-center">
                     <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/20 backdrop-blur-sm rounded-full p-3 border border-white/30">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                       </svg>
                     </div>
                   </div>
-                </a>
+                </button>
               </div>
 
               <div className="p-4 flex flex-col h-80">
-                <h3 className="text-lg md:text-xl text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
-                  {project.title}
-                </h3>
+                <button
+                  onClick={() => openModal(project)}
+                  className="text-left w-full"
+                >
+                  <h3 className="text-lg md:text-xl text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300 hover:text-cyan-400">
+                    {project.title}
+                  </h3>
+                </button>
                 
                 <p className="text-gray-300 mb-3 text-xs leading-relaxed line-clamp-2 group-hover:text-gray-200 transition-colors duration-300">
                   {project.description}
@@ -479,6 +516,13 @@ const Projects = () => {
         </div>
       </div>
     </section>
+
+    <ProjectModal
+      project={selectedProject}
+      isOpen={isModalOpen}
+      onClose={closeModal}
+    />
+  </>
   );
 };
 
