@@ -18,7 +18,7 @@ const Projects = () => {
       ],
       github: null,
       live: "https://devpost.com/software/stock-sense",
-      image: "/images/proj_1.png",
+      image: "./images/proj_1.png",
       collaborators: []
     },
     {
@@ -40,7 +40,7 @@ const Projects = () => {
       ],
       github: null,
       live: "https://devpost.com/software/criminality",
-      image: "/images/proj_6.jpg",
+      image: "./images/proj_6.jpg",
       collaborators: []
     },
     {
@@ -61,7 +61,7 @@ const Projects = () => {
       ],
       github: null,
       live: "https://devpost.com/software/investment-insights-app",
-      image: "/images/proj_2.png",
+      image: "./images/proj_2.png",
       collaborators: []
     },
     {
@@ -81,7 +81,7 @@ const Projects = () => {
       ],
       github: "https://github.com/NishanthGandhe/PersonalAssistant",
       live: null,
-      image: "/images/Virtual-AI-assistant.png",
+      image: "./images/Virtual-AI-assistant.png",
       collaborators: []
     },
     {
@@ -102,7 +102,7 @@ const Projects = () => {
       ],
       github: "https://github.com/NishanthGandhe/DrStrangeMagicHands",
       live: null,
-      image: "/images/strange.jpg",
+      image: "./images/strange.jpg",
       collaborators: []
     },
     {
@@ -123,7 +123,7 @@ const Projects = () => {
       ],
       github: "https://github.com/NishanthGandhe/ArticleReader",
       live: null,
-      image: "/images/article.jpg",
+      image: "./images/article.jpg",
       collaborators: []
     },
     {
@@ -144,7 +144,7 @@ const Projects = () => {
       ],
       github: "https://github.com/NishanthGandhe/PDFReader",
       live: null,
-      image: "/images/pdfimage.png",
+      image: "./images/pdfimage.png",
       collaborators: []
     },
     {
@@ -165,7 +165,7 @@ const Projects = () => {
       ],
       github: "https://github.com/NishanthGandhe/WordOuputNextJs",
       live: null,
-      image: "/images/hackanimation.png",
+      image: "./images/hackanimation.png",
       collaborators: []
     },
     {
@@ -187,7 +187,7 @@ const Projects = () => {
       ],
       github: "https://github.com/nishanthgandhe/NLPStreamlitApp",
       live: "https://nlpworkshop.streamlit.app/",
-      image: "/images/nlp_streamlit.png",
+      image: "./images/nlp_streamlit.png",
       collaborators: []
     },
     {
@@ -208,7 +208,7 @@ const Projects = () => {
       ],
       github: "https://github.com/nishanthgandhe/PersonalPortfolio-1",
       live: null,
-      image: "/images/portfolio_v1.png",
+      image: "./images/portfolio_v1.png",
       collaborators: []
     },
     {
@@ -230,7 +230,7 @@ const Projects = () => {
       ],
       github: "https://github.com/nishanthgandhe/XMLGenius",
       live: null,
-      image: "/images/xml_genius.png",
+      image: "./images/xml_genius.png",
       collaborators: []
     },
     {
@@ -251,7 +251,7 @@ const Projects = () => {
       ],
       github: "https://github.com/nishanthgandhe/PowerSwimAcademy",
       live: "https://www.powerswimacademy.com/",
-      image: "/images/powerswim.png",
+      image: "./images/powerswim.png",
       collaborators: []
     },
     {
@@ -273,7 +273,7 @@ const Projects = () => {
       ],
       github: "https://github.com/nishanthgandhe/F1DashboardML",
       live: "https://f1dashboardml.streamlit.app/",
-      image: "/images/f1_dashboard.png",
+      image: "./images/f1_dashboard.png",
       collaborators: []
     },
     {
@@ -295,7 +295,7 @@ const Projects = () => {
       ],
       github: "https://github.com/nishanthgandhe/MarvelRivals-GuessWho",
       live: "https://nishanthgandhe.github.io/MarvelRivals-GuessWho/",
-      image: "/images/marvel_rivals.png",
+      image: "./images/marvel_rivals.png",
       collaborators: []
     },
     {
@@ -318,7 +318,7 @@ const Projects = () => {
       ],
       github: "https://github.com/nishanthgandhe/CryptoPipeline",
       live: "https://crypto-pipeline.vercel.app/",
-      image: "/images/crypto_pipeline.png",
+      image: "./images/crypto_pipeline.png",
       collaborators: []
     }
   ];

@@ -6,7 +6,7 @@ const Experience = () => {
       role: "Software Engineering Intern",
       period: "May 2025 - August 2025",
       location: "Remote",
-      logo: "/images/statefarm.png",
+      logo: "./images/statefarm.png",
       description: "Developed a full-stack app to analyze, quickly repair, and view large XML documents using Electron, React, Python, and C. Enhanced system architecture by adding a new database table and GitLab routing for cached feature flags.",
       responsibilities: [
         "Developed a full-stack app to analyze, quickly repair, and view large XML documents using Electron, React, Python, and C.",
@@ -22,7 +22,7 @@ const Experience = () => {
       role: "Workshops Officer",
       period: "January 2025 - Present",
       location: "College Station, TX",
-      logo: "/images/aggie_datascience.png",
+      logo: "./images/aggie_datascience.png",
       description: "Leading technical workshops for 50-100 club members on data science, machine learning, and AI topics with hands-on activities and presentations.",
       responsibilities: [
         "Assemble and deliver workshops to 50-100 club members on data science, machine learning, and AI topics.",
@@ -36,7 +36,7 @@ const Experience = () => {
       role: "Website Developer & Strategic Technology Consultant",
       period: "September 2024 - August 2025",
       location: "Remote",
-      logo: "/images/powerswim.png",
+      logo: "./images/powerswim.png",
       description: "Architected and developed a comprehensive full-stack web platform that digitally transformed a traditional swim coaching business, enabling new revenue streams and modernizing operations through strategic technology implementation.",
       responsibilities: [
         "Designed and developed a full-stack responsive website with complete booking system, payment integration, and client management functionality using modern web technologies.",
@@ -53,7 +53,7 @@ const Experience = () => {
       role: "Consumer Insights Data Analytics Extern",
       period: "July 2024 - September 2024",
       location: "Remote",
-      logo: "/images/beats.png",
+      logo: "./images/beats.png",
       description: "Conducted comprehensive data analysis using Python, Selenium, and AI tools to extract consumer insights and perform sentiment analysis on customer reviews.",
       responsibilities: [
         "Scripted Python code and used Selenium to scrape the web for consumer data, preparing it for analysis.",
@@ -68,7 +68,7 @@ const Experience = () => {
       role: "Software Engineering Intern",
       period: "May 2024 - July 2024",
       location: "College Station, TX",
-      logo: "/images/capsher.png",
+      logo: "./images/capsher.png",
       description: "Developed full-stack solutions using Angular and C# while implementing real-time communication systems and 3D data visualization components.",
       responsibilities: [
         "Implemented a dark mode transition on a multi-layered web application using Angular Frontend and C# backend.",
@@ -83,7 +83,7 @@ const Experience = () => {
       role: "Project Lead",
       period: "June 2023 - May 2024",
       location: "Remote",
-      logo: "/images/ai_mastermind.png",
+      logo: "./images/ai_mastermind.png",
       description: "Led development of multiple AI chatbots and machine learning projects, utilizing transformer models and fine-tuning techniques for various applications.",
       responsibilities: [
         "Created multiple AI chatbots to replicate JARVIS, analyze Supreme Court cases, rate movies based on the IMDB Database, and Q&A bots that can read and understand PDFs and online articles.",
@@ -97,7 +97,7 @@ const Experience = () => {
       role: "Video Game & Gamification Research Student",
       period: "September 2023 - May 2024",
       location: "College Station, TX",
-      logo: "/images/tamu_research.png",
+      logo: "./images/tamu_research.png",
       description: "Conducted research on educational applications of video games and gamification, developing prototypes and analyzing data to enhance learning outcomes.",
       responsibilities: [
         "Created AI-driven data analysis initiatives to convert raw research data into valuable insights.",
@@ -112,7 +112,7 @@ const Experience = () => {
       role: "Cybersecurity Student Technician",
       period: "December 2023 - Present",
       location: "College Station, TX",
-      logo: "/images/tamu_cyber.png",
+      logo: "./images/tamu_cyber.png",
       description: "Working with enterprise-grade security tools to monitor network threats, analyze protocols, and develop custom security queries for threat detection.",
       responsibilities: [
         "Assisted in programs to analyze the frequency of various application protocols on the network and their locations.",
