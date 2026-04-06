@@ -2,6 +2,21 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
+      company: "College Contact",
+      role: "Software Engineering",
+      period: "December 2025 - Present",
+      location: "Remote",
+      logo: "./images/collegecontact.png",
+      description: "Developed a full-stack app to analyze, quickly repair, and view large XML documents using Electron, React, Python, and C. Enhanced system architecture by adding a new database table and GitLab routing for cached feature flags.",
+      responsibilities: [
+        "Developing a NestJS backend with Redis caching, reducing database queries, and improving API response times by ~30%.",
+        "Building a React-based admin dashboard to manage platform data, internal tools, and operational workflows.",
+        "Collaborated with engineers in a startup environment to ship features through code reviews, testing, and deployments."
+      ],
+      type: "work"
+    },
+    {
+      id: 2,
       company: "State Farm",
       role: "Software Engineering Intern",
       period: "May 2025 - August 2025",
@@ -17,7 +32,7 @@ const Experience = () => {
       type: "work"
     },
     {
-      id: 2,
+      id: 3,
       company: "Aggie Data Science Club",
       role: "Workshops Officer",
       period: "January 2025 - Present",
@@ -31,7 +46,7 @@ const Experience = () => {
       type: "leadership"
     },
     {
-      id: 3,
+      id: 4,
       company: "PowerSwim Academy",
       role: "Website Developer & Strategic Technology Consultant",
       period: "September 2024 - August 2025",
@@ -48,7 +63,7 @@ const Experience = () => {
       type: "freelance"
     },
     {
-      id: 4,
+      id: 5,
       company: "Beats by Dre",
       role: "Consumer Insights Data Analytics Extern",
       period: "July 2024 - September 2024",
@@ -63,7 +78,7 @@ const Experience = () => {
       type: "work"
     },
     {
-      id: 5,
+      id: 6,
       company: "Capsher Technology",
       role: "Software Engineering Intern",
       period: "May 2024 - July 2024",
@@ -78,7 +93,7 @@ const Experience = () => {
       type: "work"
     },
     {
-      id: 6,
+      id: 7,
       company: "AI Mastermind",
       role: "Project Lead",
       period: "June 2023 - May 2024",
@@ -92,7 +107,7 @@ const Experience = () => {
       type: "project"
     },
     {
-      id: 7,
+      id: 8,
       company: "Live Labs",
       role: "Video Game & Gamification Research Student",
       period: "September 2023 - May 2024",
@@ -107,7 +122,7 @@ const Experience = () => {
       type: "research"
     },
     {
-      id: 8,
+      id: 9,
       company: "Texas A&M University Cybersecurity Center",
       role: "Cybersecurity Student Technician",
       period: "December 2023 - Present",
@@ -169,7 +184,7 @@ const Experience = () => {
                           <div>
                             <h1 className="font-semibold text-3xl text-white">{exp.role}</h1>
                             <p className="my-5 text-gray-300">
-                              �️ {exp.period}
+                              {exp.period}
                             </p>
                             <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-gray-300">
                               {exp.responsibilities.map((responsibility, idx) => (
@@ -237,7 +252,7 @@ const Experience = () => {
                 
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-400/30 rounded-full text-xs text-cyan-300">
-                    3x Dean's Honor Roll
+                    4x Dean's Honor Roll
                   </span>
                   <span className="px-3 py-1 bg-purple-500/20 border border-purple-400/30 rounded-full text-xs text-purple-300">
                     Engineering Honors Member
